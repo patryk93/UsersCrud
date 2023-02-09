@@ -23,6 +23,13 @@ public class DbUtil {
         return dataSource;
     }
 
+//    public static Connection getConnection() throws SQLException {
+//        return DriverManager.getConnection(
+//                "jdbc:mysql://localhost:3306/workshop2?useSSL=false&characterEncoding=utf8&serverTimezone=UTC",
+//                "root",
+//                "coderslab");
+//    }
+
     public static void insert(Connection conn, String query, String... params) {
         try (PreparedStatement statement = conn.prepareStatement(query)) {
             for (int i = 0; i < params.length; i++) {

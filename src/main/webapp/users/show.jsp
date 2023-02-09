@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: patryk
   Date: 07.02.2023
-  Time: 18:50
+  Time: 21:42
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -77,55 +77,48 @@
 
             </nav>
             <!-- End of Topbar -->
-<%--            <div class="container-fluid">--%>
+
             <!-- Begin Page Content -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                 <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
-                <a href="<c:url value="/user/add"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                    <i class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
+                <a href="<c:url value="/user/list"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <i class="fas fa-download fa-sm text-white-50"></i> Lista użytkowników</a>
             </div>
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Lista użytkowników</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Szczegóły użytkownika</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
-                                <th>Id</th>
-                                <th>Nazwa użytkownika</th>
-                                <th>Email</th>
-                                <th>Akcja</th>
+                                <th>Id</th> <td>${user.id}</td>
                             </tr>
-                            <c:forEach var="user" items="${users}" >
-                                <tr>
-                                    <td>${user.id}</td>
-                                    <td>${user.userName}</td>
-                                    <td>${user.email}</td>
-                                    <td>
-                                        <a href='<c:url value="/user/delete?id=${user.id}"/>'>Usuń</a>
-                                        <a href='<c:url value="/user/edit?id=${user.id}"/>'>Edit</a>
-                                        <a href='<c:url value="/user/show?id=${user.id}"/>'>Pokaż</a>
-                                    </td>
-                                </tr>
-                            </c:forEach>
+                            <tr>
+                                <th>Nazwa użytkownika</th><td>${user.userName}</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th><td>${user.email}</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.container-fluid -->
         <%@ include file="/footer.jsp" %>
-        </div>
-        <!-- End of Main Content -->
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+</div>
+<!-- End of Content Wrapper -->
 
 </div>
 <!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="<c:url value="#page-top"/>">
+<a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
 
@@ -168,4 +161,4 @@
 
 </body>
 
-</html>
+</html>>

@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: patryk
   Date: 07.02.2023
-  Time: 18:50
+  Time: 21:42
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -77,55 +77,51 @@
 
             </nav>
             <!-- End of Topbar -->
-<%--            <div class="container-fluid">--%>
+
             <!-- Begin Page Content -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                 <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
-                <a href="<c:url value="/user/add"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                    <i class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
+                <a href="<c:url value="/user/list"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <i class="fas fa-download fa-sm text-white-50"></i>Lista użytkowników</a>
             </div>
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Lista użytkowników</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Dodaj użytkownika</h6>
                 </div>
                 <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th>Id</th>
-                                <th>Nazwa użytkownika</th>
-                                <th>Email</th>
-                                <th>Akcja</th>
-                            </tr>
-                            <c:forEach var="user" items="${users}" >
-                                <tr>
-                                    <td>${user.id}</td>
-                                    <td>${user.userName}</td>
-                                    <td>${user.email}</td>
-                                    <td>
-                                        <a href='<c:url value="/user/delete?id=${user.id}"/>'>Usuń</a>
-                                        <a href='<c:url value="/user/edit?id=${user.id}"/>'>Edit</a>
-                                        <a href='<c:url value="/user/show?id=${user.id}"/>'>Pokaż</a>
-                                    </td>
-                                </tr>
-                            </c:forEach>
-                        </table>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="userName">Nazwa</label>
+                        <input name="userName" type="text" class="form-control" id="userName" placeholder="Nazwa użytkownika">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email</label>
+                        <input name="userEmail" type="email" class="form-control" id="userEmail" placeholder="Email użytkownika">
+                    </div>
+                    <div class="form-group">
+                        <label for="userPassword">Hasło</label>
+                        <input name="userPassword" type="password" class="form-control" id="userPassword" placeholder="Hasło użytkownika">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Zapisz</button>
+                </form>
             </div>
-        </div>
-        <!-- /.container-fluid -->
-        <%@ include file="/footer.jsp" %>
-        </div>
-        <!-- End of Main Content -->
     </div>
-    <!-- End of Content Wrapper -->
+</div>
+<%@ include file="/footer.jsp" %>
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+</div>
+<!-- End of Content Wrapper -->
 
 </div>
 <!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="<c:url value="#page-top"/>">
+<a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
 

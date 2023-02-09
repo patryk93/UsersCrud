@@ -110,34 +110,23 @@ public class UserDao {
 
 
     public User[] findAll() {
-
         try (Connection conn = DbUtil.getConnection()) {
-
             User[] users = new User[0];
             PreparedStatement statement = conn.prepareStatement(FIND_ALL_USERS_QUERY);
             ResultSet resultSet = statement.executeQuery();
-
             while (resultSet.next()) {
-
                 User user = new User();
                 user.setId(resultSet.getInt("id"));
                 user.setUserName(resultSet.getString("username"));
                 user.setEmail(resultSet.getString("email"));
                 user.setPassword(resultSet.getString("password"));
                 users = addToArray(user, users);
-
             }
-
             return users;
-
         } catch (SQLException e) {
-
             e.printStackTrace();
-
             return null;
-
         }
-
     }
 
 
