@@ -9,22 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8217048-69cc-4c95-b6b7-66111804db08" name="Changes" comment="prepare template">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserShow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/show.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/utils/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/utils/DbUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
+    <list default="true" id="d8217048-69cc-4c95-b6b7-66111804db08" name="Changes" comment="Final commit">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +182,7 @@
       <workItem from="1675874921605" duration="14985000" />
       <workItem from="1675890174112" duration="7000" />
       <workItem from="1675926044498" duration="10415000" />
-      <workItem from="1675970796940" duration="3319000" />
+      <workItem from="1675970796940" duration="3760000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1675264863395</created>
@@ -212,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675795058390</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Final commit">
+      <created>1675974183164</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675974183164</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +225,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="prepare template" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare template" />
+    <MESSAGE value="Final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit" />
   </component>
 </project>
