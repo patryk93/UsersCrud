@@ -9,7 +9,7 @@ Web application to manage users
 - Delete selected user.
 
 # List of all users
-![image](https://user-images.githubusercontent.com/26244379/217930823-f57ac3ef-91ec-4b89-b96b-ef4a4bacac85.png)
+![image](https://user-images.githubusercontent.com/26244379/217936972-0f4f4dd5-a189-44de-9bf5-b43a3374d9ec.png)
 
 # Adding a new user
 ![image](https://user-images.githubusercontent.com/26244379/217931004-5d849694-58b2-4400-8b6f-b6fdfc2d8bf4.png)
